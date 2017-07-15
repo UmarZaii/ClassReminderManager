@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1054691984994",
+    "firebase_url": "https://classreminder-eb4f8.firebaseio.com",
+    "project_id": "classreminder-eb4f8",
+    "storage_bucket": "classreminder-eb4f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054691984994:android:2dc640e527905e23",
+        "android_client_info": {
+          "package_name": "com.umarzaii.classreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054691984994-d61vn023sasjr6bgb3ag2vbp6ea7sl00.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umarzaii.classreminder",
+            "certificate_hash": "d1df49d313ffda31c1d0a6c67bf07f060b2e0cf9"
+          }
+        },
+        {
+          "client_id": "1054691984994-jk4i96geun8vdf0i7l2905h3j04iahaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCClUC72ec60EKvo-rmo_L9SuBD4Gujo6g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054691984994-jk4i96geun8vdf0i7l2905h3j04iahaf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054691984994:android:2efe05ebe59d16c4",
+        "android_client_info": {
+          "package_name": "com.umarzaii.classremindermanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054691984994-noiol8t2kmfe16pf7vds4v8n6fa7bmi3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umarzaii.classremindermanager",
+            "certificate_hash": "d1df49d313ffda31c1d0a6c67bf07f060b2e0cf9"
+          }
+        },
+        {
+          "client_id": "1054691984994-jk4i96geun8vdf0i7l2905h3j04iahaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCClUC72ec60EKvo-rmo_L9SuBD4Gujo6g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054691984994-jk4i96geun8vdf0i7l2905h3j04iahaf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
