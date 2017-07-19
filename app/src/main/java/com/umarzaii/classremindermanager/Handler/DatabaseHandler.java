@@ -21,10 +21,23 @@ public class DatabaseHandler {
     private String tblUser = "tblUser";
     private String tblUniversity = "tblUniversity";
     private String tblCourse = "tblCourse";
-    private String credentials = "credentials";
-    private String courseAdmin = "courseAdmin";
 
-    public static String PSMZAID = "a2wx2pyFWJbRcOYWqkwwu7YwgRo2";
+    public static final String tblClassLocation = "tblClassLocation";
+    public static final String tblUserClass = "tblUserClass";
+    public static final String tblSubject = "tblSubject";
+
+    public static final String courseID = "courseID";
+    public static final String courseAdmin = "courseAdmin";
+    public static final String uniAdminDepartment = "uniAdminDepartment";
+    public static final String uniHeadDepartment = "uniHeadDepartment";
+    public static final String uniLecturer = "uniLecturer";
+    public static final String uniStudent = "uniStudent";
+    public static final String credentials = "credentials";
+
+    public static final String timeFrameDay = "timeFrameDay";
+    public static final String timeFrameHour = "timeFrameHour";
+
+    public static final String PSMZAID = "a2wx2pyFWJbRcOYWqkwwu7YwgRo2";
 
     public DatabaseHandler() {
         if (!isPersistenceEnabled) {

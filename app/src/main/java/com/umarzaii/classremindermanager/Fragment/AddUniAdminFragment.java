@@ -28,6 +28,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.umarzaii.classremindermanager.Handler.DatabaseHandler.PSMZAID;
+import static com.umarzaii.classremindermanager.Handler.DatabaseHandler.courseAdmin;
+import static com.umarzaii.classremindermanager.Handler.DatabaseHandler.uniAdminDepartment;
 
 public class AddUniAdminFragment extends Fragment {
 
@@ -164,8 +166,8 @@ public class AddUniAdminFragment extends Fragment {
         final Map<String, Object> dataMapCourse = new HashMap<String, Object>();
         final Map<String, Object> dataMapCourseAdmin = new HashMap<String, Object>();
 
-        UserModel userModel = new UserModel(PSMZAID,"Admin",strEmployeeID,strCourseID);
-        CourseModel courseModel = new CourseModel(strCourseID,strCourseName,strEmployeeID);
+        UserModel userModel = new UserModel(strUserID,PSMZAID,uniAdminDepartment,strEmployeeID,strCourseID);
+        CourseModel courseModel = new CourseModel(strCourseID,strCourseName);
 
         dataMapUser.put("credentials", userModel.credentialsToMap());
         databaseHandler.getTblUser(strUserID).updateChildren(dataMapUser);
@@ -173,8 +175,8 @@ public class AddUniAdminFragment extends Fragment {
         dataMapCourse.put(strCourseID, courseModel.detailsToMap());
         databaseHandler.getTblUniversityCourse(PSMZAID).updateChildren(dataMapCourse);
 
-        dataMapCourseAdmin.put(strEmployeeID, courseModel.employeeToMap());
-        databaseHandler.getTblUniversityCourseAdmin(PSMZAID,strCourseID).updateChildren(dataMapCourseAdmin);
+        dataMapCourseAdmin.put(courseAdmin, userModel.userIDToMap());
+        databaseHandler.getTblUniversityCourse(PSMZAID,strCourseID).updateChildren(dataMapCourseAdmin);
 
         fragmentHandler.popBackStack("AddUniAdmin");
         fragmentHandler.popBackStack("AddCourse");

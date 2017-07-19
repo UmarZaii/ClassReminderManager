@@ -11,16 +11,14 @@ public class CourseModel {
 
     public String courseID;
     public String courseName;
-    public String employeeID;
 
     public CourseModel() {
 
     }
 
-    public CourseModel(String courseID, String courseName, String employeeID) {
+    public CourseModel(String courseID, String courseName) {
         this.courseID = courseID;
         this.courseName = courseName;
-        this.employeeID = employeeID;
     }
 
     @Exclude
@@ -28,14 +26,6 @@ public class CourseModel {
         HashMap<String, Object> result = new HashMap<>();
         result.put("courseID", courseID);
         result.put("courseName", courseName);
-
-        return result;
-    }
-
-    @Exclude
-    public Map<String, Object> employeeToMap() {
-        HashMap<String, Object> result = new HashMap<>();
-        result.put("employeeID", employeeID);
 
         return result;
     }
