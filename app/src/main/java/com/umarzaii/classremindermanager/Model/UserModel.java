@@ -12,6 +12,7 @@ public class UserModel {
     public String userID;
     public String userEmail;
     public String userName;
+
     public String uniID;
     public String userType;
     public String employeeID;
